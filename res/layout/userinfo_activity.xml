@@ -1,0 +1,124 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/body_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/headimg_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:background="@drawable/headimg_btn_userinfo" >
+
+        <ImageView
+            android:id="@+id/headimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="45dp"
+            android:background="@null" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/realname_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/realname_btn_userinfo" >
+
+        <TextView
+            android:id="@+id/realname"
+            style="@style/DetailContentStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45dp"
+            android:text="雷人" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/phonenumber_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
+        android:clickable="true"
+        android:background="@drawable/username_btn_userinfo" >
+
+        <TextView
+            android:id="@+id/phonenumber"
+            style="@style/DetailContentStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45dp"
+            android:text="18800001111" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/userlevel_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-1dp"
+        android:clickable="true"
+        android:background="@drawable/userlevel_btn_userinfo" >
+
+        <TextView
+            android:id="@+id/userlevel"
+            style="@style/DetailContentStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45dp"
+            android:text="-1(已冻结)" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/identificationstate_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:background="@drawable/identificationstate_btn_userinfo" >
+
+       <TextView
+            android:id="@+id/identificationstate"
+            style="@style/DetailContentStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45dp"
+            android:text="已通过" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/balance_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:background="@drawable/account_btn_userinfo" >
+
+        <TextView
+            android:id="@+id/balance"
+            style="@style/DetailContentStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="45dp"
+            android:text="未开通" />
+    </RelativeLayout>
+
+</LinearLayout>

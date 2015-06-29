@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/body_bg" >
+
+    <RelativeLayout
+        android:id="@+id/viewpager_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@color/title_bg" >
+
+        <LinearLayout
+            android:id="@+id/viewpager_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/menu_allpost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bbs_menu_allpost_click" />
+
+            <ImageButton
+                android:id="@+id/menu_mypost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bbs_menu_mypost_def" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/allpostlist"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewpager_rl"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:divider="@color/transparency"
+        android:dividerHeight="10dp"
+        android:visibility="visible" />
+
+    <ListView
+        android:id="@+id/mypostlist"
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewpager_rl"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:divider="@color/transparency"
+        android:dividerHeight="10dp"
+        android:visibility="gone" />
+
+</RelativeLayout>

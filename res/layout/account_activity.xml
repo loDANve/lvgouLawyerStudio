@@ -1,0 +1,133 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/body_bg" >
+
+    <LinearLayout
+        android:id="@+id/viewpager_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/menu_trading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/productdetail_click" />
+
+        <ImageButton
+            android:id="@+id/menu_withdraw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/servicelog_def" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/account_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom_ll"
+        android:layout_below="@+id/viewpager_ll"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp" >
+
+        <ListView
+            android:id="@+id/tradinglist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/line_color"
+            android:dividerHeight="1px" />
+        <ListView
+            android:id="@+id/withdrawlist"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/line_color"
+            android:dividerHeight="1px" />
+    </android.support.v4.view.ViewPager>
+
+    <RelativeLayout
+        android:id="@+id/bottom_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/account_bottom_bg"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/withdraw_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/withdraw_btn" />
+
+        <TextView
+            android:id="@+id/balance"
+            style="@style/MainTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_toLeftOf="@+id/updateservice"
+            android:gravity="center_horizontal"
+            android:text="账户余额:50000元" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/updateservice"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/income_month_text"
+                style="@style/AccountIncomeTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="本月收益:" />
+
+            <TextView
+                android:id="@+id/income_month"
+                style="@style/AccountIncomeTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500元" />
+
+            <TextView
+                android:id="@+id/income_all_text"
+                style="@style/AccountIncomeTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="全部收益:" />
+
+            <TextView
+                android:id="@+id/income_all"
+                style="@style/AccountIncomeTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="111500元" />
+
+            <TextView
+                android:id="@+id/unbalanced_text"
+                style="@style/AccountIncomeTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="未结算:" />
+
+            <TextView
+                android:id="@+id/unbalanced"
+                style="@style/AccountIncomeTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="500元" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

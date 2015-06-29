@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="340dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/levelchange_list_bg" >
+
+    <TextView
+        android:id="@+id/changestate"
+        style="@style/ListWarningTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="降为-1级，账户被冻结" />
+    
+    <TextView
+        android:id="@+id/changedate"
+        style="@style/ListDateTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/changestate"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:text="2014-05-05 15:15" />
+    
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="310dp"
+        android:layout_height="1px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/changestate"
+        android:background="@color/line_color" />
+    
+    <TextView
+        android:id="@+id/changecause"
+        style="@style/ListWarningTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/line"
+        android:layout_alignLeft="@+id/changestate"
+        android:text="用户投诉" />
+
+</RelativeLayout>

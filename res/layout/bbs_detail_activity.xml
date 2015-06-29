@@ -1,0 +1,115 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/body_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/borderstyle" >
+
+        <ImageView
+            android:id="@+id/headimg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bbs_headimg" />
+
+        <TextView
+            android:id="@+id/username"
+            style="@style/DetailTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/headimg"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/headimg"
+            android:text="蕾蕾" />
+
+        <TextView
+            android:id="@+id/datetime"
+            style="@style/WithdrawDateTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/username"
+            android:layout_below="@+id/username"
+            android:layout_marginTop="5dp"
+            android:text="2014-05-05 15:15" />
+
+        <TextView
+            android:id="@+id/posttitle"
+            style="@style/DetailTitleStyle"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/headimg"
+            android:layout_below="@+id/headimg"
+            android:layout_marginTop="5dp"
+            android:text="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" />
+
+        <TextView
+            android:id="@+id/bbs_line"
+            android:layout_width="320dp"
+            android:layout_height="1dp"
+            android:layout_alignLeft="@+id/headimg"
+            android:layout_below="@+id/posttitle"
+            android:layout_marginTop="5dp"
+            android:background="@color/line_color" />
+
+        <TextView
+            android:id="@+id/postcontext"
+            style="@style/DetailTitleStyle"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/headimg"
+            android:layout_below="@+id/bbs_line"
+            android:layout_marginTop="5dp"
+            android:text="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/borderstyle" >
+
+        <TextView
+            android:id="@+id/replycount"
+            style="@style/DetailTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="回复(21)" />
+
+        <TextView
+            android:id="@+id/clickcount"
+            style="@style/DetailContentStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:text="点击(21)" />
+
+        <ImageView
+            android:id="@+id/bbs_cutline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/replycount"
+            android:background="@drawable/bbs_cutline" />
+
+        <ListView
+            android:id="@+id/replylist"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bbs_cutline"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:divider="@color/line_color"
+            android:dividerHeight="1dp" />
+    </RelativeLayout>
+
+</LinearLayout>

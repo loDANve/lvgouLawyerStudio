@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/borderstyle"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/servicecontent"
+            style="@style/DetailTitleStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容" />
+
+        <RelativeLayout
+            android:id="@+id/atttitle_rl"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_centerVertical="true"
+                android:background="@color/line_color" />
+
+            <TextView
+                style="@style/DetailTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white"
+                android:text="附件列表" />
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/attlist"
+            android:layout_width="320dp"
+            android:layout_height="0dp"
+            android:divider="@color/line_color"
+            android:dividerHeight="1px" />
+
+        <RelativeLayout
+            android:id="@+id/useranswer_rl"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_centerVertical="true"
+                android:background="@color/line_color" />
+
+            <TextView
+                style="@style/DetailTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="用户回复"
+                android:background="@color/white"
+                android:textColor="#0088cc" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/useranswer"
+            style="@style/DetailTitleStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容" />
+
+        <RelativeLayout
+            android:id="@+id/userattlist_rl"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_centerVertical="true"
+                android:background="@color/line_color" />
+
+            <TextView
+                style="@style/DetailTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="附件列表"
+                android:background="@color/white"
+                android:textColor="#0088cc" />
+        </RelativeLayout>
+        
+        <ListView
+            android:id="@+id/attlist_user"
+            android:layout_width="320dp"
+            android:layout_height="0dp"
+            android:divider="@color/line_color"
+            android:dividerHeight="1px" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/logdate"
+        style="@style/DetailTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#bbbbbb"
+        android:text="2014-05-16 15:15:15" />
+
+</RelativeLayout>

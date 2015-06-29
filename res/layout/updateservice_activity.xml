@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/body_bg" >
+
+    <TextView
+        android:id="@+id/servicecontent_text"
+        style="@style/DetailTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="20dp"
+        android:text="本次服务内容" />
+
+    <EditText
+        android:id="@+id/servicecontent"
+        style="@style/DetailTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/servicecontent_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="top|left"
+        android:hint="请输入服务内容..."
+        android:background="@drawable/updateservice_edit_bg"
+        android:paddingLeft="13dp"
+        android:paddingTop="10dp" />
+
+    <TextView
+        android:id="@+id/selectfile_text"
+        style="@style/DetailTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/servicecontent"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="20dp"
+        android:text="选择文件" />
+
+    <ImageButton
+        android:id="@+id/selectfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/selectfile_text"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/selectfile_text"
+        android:background="@drawable/selectfile_btn" />
+
+    <ListView
+        android:id="@+id/attlist"
+        android:layout_width="340dp"
+        android:layout_height="0dp"
+        android:layout_below="@+id/selectfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/borderstyle"
+        android:divider="@color/line_color"
+        android:dividerHeight="1px" />
+
+</RelativeLayout>

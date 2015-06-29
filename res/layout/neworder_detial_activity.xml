@@ -1,0 +1,292 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/body_bg" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/bottom_ll" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/productname"
+                style="@style/DetailProductNameStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="这里显示产品名称" />
+
+            <TextView
+                android:id="@+id/territory_text"
+                style="@style/DetailTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/productname"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:text="法律领域" />
+
+            <TextView
+                android:id="@+id/territory"
+                style="@style/DetailContentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/territory_text"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/territory_text"
+                android:text="法律领域:" />
+
+            <TextView
+                android:id="@+id/servicearea_text"
+                style="@style/DetailTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory_text"
+                android:layout_below="@+id/territory_text"
+                android:layout_marginTop="10dp"
+                android:text="服务地区" />
+
+            <TextView
+                android:id="@+id/servicearea"
+                style="@style/DetailContentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory"
+                android:layout_alignTop="@+id/servicearea_text"
+                android:layout_toRightOf="@+id/servicearea_text"
+                android:text="法律领域:" />
+
+            <TextView
+                android:id="@+id/allot_text"
+                style="@style/DetailTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory_text"
+                android:layout_below="@+id/servicearea_text"
+                android:layout_marginTop="10dp"
+                android:text="订单来源" />
+
+            <TextView
+                android:id="@+id/allot"
+                style="@style/DetailContentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory"
+                android:layout_alignTop="@+id/allot_text"
+                android:layout_toRightOf="@+id/allot_text"
+                android:text="法律领域:" />
+
+            <TextView
+                android:id="@+id/remoteraise_text"
+                style="@style/DetailTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory_text"
+                android:layout_below="@+id/allot_text"
+                android:layout_marginTop="10dp"
+                android:text="异地加价" />
+
+            <TextView
+                android:id="@+id/remoteraise"
+                style="@style/DetailContentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory"
+                android:layout_alignTop="@+id/remoteraise_text"
+                android:layout_toRightOf="@+id/remoteraise_text"
+                android:text="法律领域:" />
+
+            <TextView
+                android:id="@+id/arearaise_text"
+                style="@style/DetailTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory_text"
+                android:layout_below="@+id/remoteraise_text"
+                android:layout_marginTop="10dp"
+                android:text="地区加价" />
+
+            <TextView
+                android:id="@+id/arearaise"
+                style="@style/DetailContentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory"
+                android:layout_alignTop="@+id/arearaise_text"
+                android:layout_toRightOf="@+id/arearaise_text"
+                android:text="法律领域:" />
+
+            <TextView
+                android:id="@+id/appoint_text"
+                style="@style/DetailTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory_text"
+                android:layout_below="@+id/arearaise_text"
+                android:layout_marginTop="10dp"
+                android:text="点名加价" />
+
+            <TextView
+                android:id="@+id/appoint"
+                style="@style/DetailContentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory"
+                android:layout_alignTop="@+id/appoint_text"
+                android:layout_toRightOf="@+id/appoint_text"
+                android:text="法律领域:" />
+
+            <TextView
+                android:id="@+id/servicecost_text"
+                style="@style/DetailTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory_text"
+                android:layout_below="@+id/appoint_text"
+                android:layout_marginTop="10dp"
+                android:text="服务费用" />
+
+            <TextView
+                android:id="@+id/servicecost"
+                style="@style/DetailContentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory"
+                android:layout_alignTop="@+id/servicecost_text"
+                android:layout_toRightOf="@+id/servicecost_text"
+                android:text="法律领域:" />
+
+            <TextView
+                android:id="@+id/income_text"
+                style="@style/DetailTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory_text"
+                android:layout_below="@+id/servicecost_text"
+                android:layout_marginTop="10dp"
+                android:text="服务费用" />
+
+            <TextView
+                android:id="@+id/income"
+                style="@style/DetailContentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory"
+                android:layout_alignTop="@+id/income_text"
+                android:layout_toRightOf="@+id/income_text"
+                android:text="法律领域:" />
+
+            <TextView
+                android:id="@+id/remaining_text"
+                style="@style/DetailTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory_text"
+                android:layout_below="@+id/income_text"
+                android:layout_marginTop="10dp"
+                android:text="剩余时间" />
+
+            <TextView
+                android:id="@+id/remaining"
+                style="@style/DetailContentStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory"
+                android:layout_alignTop="@+id/remaining_text"
+                android:layout_toRightOf="@+id/remaining_text"
+                android:text="法律领域:" />
+
+            <TextView
+                android:id="@+id/demand"
+                style="@style/DetailTitleStyle"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/demand_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/borderstyle"
+                android:lineSpacingExtra="5dp"
+                android:padding="15dp"
+                android:text="需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求需求" />
+
+            <TextView
+                android:id="@+id/demand_text"
+                style="@style/DetailTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory_text"
+                android:layout_below="@+id/remaining_text"
+                android:layout_marginTop="10dp"
+                android:background="@color/body_bg"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="需求描述" />
+
+            <ListView
+                android:id="@+id/attlist"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/att_text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/borderstyle"
+                android:divider="@color/line_color"
+                android:dividerHeight="1px" />
+
+            <TextView
+                android:id="@+id/att_text"
+                style="@style/DetailTitleStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/territory_text"
+                android:layout_below="@+id/demand"
+                android:layout_marginTop="10dp"
+                android:background="@color/body_bg"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:text="附件列表" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="10dp"
+                android:layout_below="@+id/attlist" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/bottom_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:background="@drawable/neworder_detail_agree_btn"
+            android:text="接单"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/refuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/neworder_detail_refuse_btn"
+            android:text="拒接"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

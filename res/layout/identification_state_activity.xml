@@ -1,0 +1,274 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/body_bg" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/state_text"
+            style="@style/EditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp" />
+
+        <RelativeLayout
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/state_text"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/iden_state_bg" >
+
+            <TextView
+                android:id="@+id/realname_text"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="15dp"
+                android:text="真实姓名:" />
+
+            <TextView
+                android:id="@+id/realname"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/realname_text"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/realname_text"
+                android:text="XXX" />
+            
+            <TextView
+                android:id="@+id/realname_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/realname_text"
+                android:layout_marginTop="15dp"
+                android:background="@color/line_color" />
+
+            <TextView
+                android:id="@+id/location_text"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/realname_text"
+                android:layout_below="@+id/realname_line"
+                android:layout_marginTop="15dp"
+                android:text="所在地区:" />
+
+            <TextView
+                android:id="@+id/location"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/location_text"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/location_text"
+                android:text="XXXXXXXXXXXXXXXXXXXXXXXX" />
+            
+            <TextView
+                android:id="@+id/location_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/location_text"
+                android:layout_marginTop="15dp"
+                android:background="@color/line_color" />
+
+            <TextView
+                android:id="@+id/office_text"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/realname_text"
+                android:layout_below="@+id/location_line"
+                android:layout_marginTop="15dp"
+                android:text="所在律所:" />
+
+            <TextView
+                android:id="@+id/office"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/office_text"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/office_text"
+                android:text="XXXXXXXXXXXXXXXXXX" />
+            
+            <TextView
+                android:id="@+id/office_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/office_text"
+                android:layout_marginTop="15dp"
+                android:background="@color/line_color" />
+            
+            <TextView
+                android:id="@+id/office_address_text"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/realname_text"
+                android:layout_below="@+id/office_line"
+                android:layout_marginTop="15dp"
+                android:text="办公地址:" />
+
+            <TextView
+                android:id="@+id/office_address"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/office_address_text"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/office_address_text"
+                android:text="XXXXXXXXXXXXXXXXXX" />
+            
+            <TextView
+                android:id="@+id/office_address_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/office_address_text"
+                android:layout_marginTop="15dp"
+                android:background="@color/line_color" />
+            
+            <TextView
+                android:id="@+id/credential_text"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/realname_text"
+                android:layout_below="@+id/office_address_line"
+                android:layout_marginTop="15dp"
+                android:text="执业证号:" />
+
+            <TextView
+                android:id="@+id/credential_address"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/credential_text"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/credential_text"
+                android:text="XXXXXXXXXXXXXXXXXX" />
+            
+            <TextView
+                android:id="@+id/credential_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/credential_text"
+                android:layout_marginTop="15dp"
+                android:background="@color/line_color" />
+            <TextView
+                android:id="@+id/field_text"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/realname_text"
+                android:layout_below="@+id/credential_line"
+                android:layout_marginTop="15dp"
+                android:text="擅长领域:" />
+
+            <TextView
+                android:id="@+id/field"
+                style="@style/EditTextStyle"
+                android:layout_width="240dp"
+                android:singleLine="false"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/field_text"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_toRightOf="@+id/field_text"
+                android:text="XXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxXXXX" />
+            
+            <TextView
+                android:id="@+id/field_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/field"
+                android:layout_marginTop="15dp"
+                android:background="@color/line_color" />
+            
+            <TextView
+                android:id="@+id/service_text"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/realname_text"
+                android:layout_below="@+id/field_line"
+                android:layout_marginTop="15dp"
+                android:text="服务地区:" />
+
+            <TextView
+                android:id="@+id/service"
+                style="@style/EditTextStyle"
+                android:layout_width="240dp"
+                android:singleLine="false"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/service_text"
+                android:layout_marginLeft="5dp"
+                android:lineSpacingExtra="5dp"
+                android:layout_toRightOf="@+id/service_text"
+                android:text="XXXXXXXXXXXXXXxxxxxxxxxxxxxxxxxxxxxXXXX" />
+            
+            <TextView
+                android:id="@+id/service_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/service"
+                android:layout_marginTop="15dp"
+                android:background="@color/line_color" />
+            
+            <TextView
+                android:id="@+id/credential_img_text"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/realname_text"
+                android:layout_below="@+id/service_line"
+                android:layout_marginTop="15dp"
+                android:text="执业证书:" />
+
+            <ImageView
+                android:id="@+id/credential_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/credential_img_text"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/credential_img_text"
+                android:background="@drawable/credential_img_bg" />
+            
+            <TextView
+                android:id="@+id/credential_img_line"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/credential_img"
+                android:layout_marginTop="15dp"
+                android:background="@color/line_color" />
+            
+            <TextView
+                android:id="@+id/photo_text"
+                style="@style/EditTextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/realname_text"
+                android:layout_below="@+id/credential_img_line"
+                android:layout_marginTop="15dp"
+                android:text="一寸照片:" />
+
+            <ImageView
+                android:id="@+id/photo_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/photo_text"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/photo_text"
+                android:background="@drawable/credential_img_bg" />
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

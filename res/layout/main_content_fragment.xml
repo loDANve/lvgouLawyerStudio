@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/neworder_btn"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/main_neworder_btn"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/neworder_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/main_msgcount_bg"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/inservice_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/neworder_btn"
+        android:layout_below="@+id/neworder_btn"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/main_inservice_btn" />
+
+    <ImageButton
+        android:id="@+id/finished_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/neworder_btn"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/neworder_btn"
+        android:background="@drawable/main_finished_btn" />
+
+    <ImageButton
+        android:id="@+id/intake_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/finished_btn"
+        android:layout_below="@+id/finished_btn"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/main_intake_btn" />
+
+    <ImageButton
+        android:id="@+id/tobeconfirm_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/neworder_btn"
+        android:layout_below="@+id/inservice_btn"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/main_tobeconfirm_btn" />
+
+    <RelativeLayout
+        android:id="@+id/income_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/neworder_btn"
+        android:layout_below="@+id/tobeconfirm_btn"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/main_income_btn"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/lastmonth_text"
+            style="@style/MainTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="50dp"
+            android:text="上月收益 : " />
+
+        <TextView
+            android:id="@+id/lastmonth"
+            style="@style/MainTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/lastmonth_text"
+            android:layout_alignTop="@+id/lastmonth_text"
+            android:text="123" />
+
+        <TextView
+            android:id="@+id/allincome_text"
+            style="@style/MainTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/lastmonth_text"
+            android:layout_below="@+id/lastmonth_text"
+            android:layout_marginTop="5dp"
+            android:text="全部收益 : " />
+
+        <TextView
+            android:id="@+id/allincome"
+            style="@style/MainTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lastmonth"
+            android:layout_alignTop="@+id/allincome_text"
+            android:text="12345678" />
+
+        <TextView
+            android:id="@+id/balance_text"
+            style="@style/MainTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/lastmonth_text"
+            android:layout_below="@+id/allincome_text"
+            android:layout_marginTop="5dp"
+            android:text="账户余额 : " />
+
+        <TextView
+            android:id="@+id/balance"
+            style="@style/MainTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/lastmonth"
+            android:layout_alignTop="@+id/balance_text"
+            android:text="123" />
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/refuse_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/finished_btn"
+        android:layout_below="@+id/intake_btn"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/main_refuse_btn" />
+
+    <RelativeLayout
+        android:id="@+id/calendarstate_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/finished_btn"
+        android:layout_below="@+id/refuse_btn"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/main_calendarstate_btn"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/calendarstate_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/main_isfree_yes" />
+    </RelativeLayout>
+
+</RelativeLayout>

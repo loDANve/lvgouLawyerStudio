@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="45dp"
+    android:background="@color/white" >
+
+    <TextView
+        android:id="@+id/tradingtype"
+        style="@style/ListWarningTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:text="提现" />
+    
+    <TextView
+        android:id="@+id/money"
+        style="@style/ListWarningTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="125dp"
+        android:text="20000元" />
+    
+    <TextView
+        android:id="@+id/datetime"
+        style="@style/ListDateTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="2014-05-05 15:45" />
+
+</RelativeLayout>

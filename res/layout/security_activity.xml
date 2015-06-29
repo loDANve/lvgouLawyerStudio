@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/body_bg" >
+
+    <TextView
+        android:id="@+id/lastlogin"
+        style="@style/DetailContentStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="上次登录时间 : 2014-06-15 12:23:15" />
+
+    <RelativeLayout
+        android:id="@+id/editloginpwd_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastlogin"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/security_btn" >
+
+        <TextView
+            android:id="@+id/loginpwd_text"
+            style="@style/DetailTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="修改登录密码"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/editwithdrawpwd_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editloginpwd_rl"
+        android:layout_marginTop="-1dp"
+        android:background="@drawable/security_btn" >
+
+        <TextView
+            android:id="@+id/withdrawpwd_text"
+            style="@style/DetailTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="修改提现密码"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gotoaccount_text"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@color/white"
+            android:gravity="left"
+            android:text="需要开通资金账户"
+            android:textColor="#ff3300"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/editphonenumber_rl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editwithdrawpwd_rl"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/security_btn" >
+
+        <TextView
+            android:id="@+id/phonenumber_text"
+            style="@style/DetailTitleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="修改绑定手机"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/phonenumber"
+            android:textColor="#bbbbbb"
+            android:textSize="16sp"
+            android:layout_width="180dp"
+            android:gravity="left"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="151****1234" />
+    </RelativeLayout>
+
+</RelativeLayout>

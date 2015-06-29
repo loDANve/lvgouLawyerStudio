@@ -1,0 +1,143 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/body_bg" >
+
+    <LinearLayout
+        android:id="@+id/hint_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username_ll"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:visibility="invisible" >
+
+        <ImageView
+            android:id="@+id/hint_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/hint_img_true" />
+
+        <TextView
+            android:id="@+id/hint_text"
+            style="@style/EditTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/username_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hint_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/phonenumber_ext"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/username_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/realname_icon_click" />
+
+        <EditText
+            android:id="@+id/username"
+            style="@style/EditTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:hint="输入您的真是姓名"
+            android:paddingLeft="5dp" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/identityid_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/phonenumber_ext"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/identityid_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/bankcard_icon_def" />
+
+        <EditText
+            android:id="@+id/identityid"
+            style="@style/EditTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:inputType="number"
+            android:hint="请输入您的身份证号"
+            android:imeOptions="actionNext"
+            android:paddingLeft="5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/pwd_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/identityid_ll"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/phonenumber_ext"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/pwd_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/pwd_img_def" />
+
+        <EditText
+            android:id="@+id/pwd"
+            style="@style/EditTextStyle"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:background="@null"
+            android:inputType="textPassword"
+            android:hint="@string/input_password"
+            android:imeOptions="actionDone"
+            android:paddingLeft="5dp" />
+        
+        <ImageButton
+            android:id="@+id/pwd_show_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/pwd_hide" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dredge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username_ll"
+        android:layout_below="@+id/pwd_ll"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/register_btn_unable"
+        android:text="开通"
+        style="@style/BtnTextStyle" />
+
+</RelativeLayout>

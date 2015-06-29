@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="darkgray">#e9e9e9</drawable>
+    <drawable name="white">#ffffff</drawable>
+
+    <color name="orange">#fc6b00</color>
+    <color name="background">#FF000000</color>
+    <color name="white">#ffffffff</color>
+    <color name="black">#616161</color>
+    <color name="text_num_gray">#333</color>
+    <color name="dialog_title_blue">#9CCCF7</color>
+    <color name="cartoon_search_text">#598300</color>
+    <color name="blue">#25b0f0</color>
+    <color name="transparency">#00000000</color>
+    <color name="bgcolor">#fcfcfc</color>
+    <color name="disable">#cecece</color>
+    <color name="green">#0D9C39</color>
+    
+    <color name="menu_bg">#3C3C3C</color>
+    <color name="title_bg">#339933</color>
+    <color name="body_bg">#e5e5e5</color>
+    <color name="btn_text">#999999</color>
+    <color name="line_color">#cccccc</color>
+    <color name="bottom_bg">#575757</color>
+    
+
+</resources>

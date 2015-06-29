@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/headimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bbs_headimg" />
+
+    <TextView
+        android:id="@+id/username"
+        style="@style/DetailTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/headimg"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/headimg"
+        android:text="蕾蕾" />
+
+    <TextView
+        android:id="@+id/datetime"
+        style="@style/WithdrawDateTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/username"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="5dp"
+        android:text="2014-05-05 15:15" />
+
+    <TextView
+        android:id="@+id/postcontext"
+        style="@style/DetailTitleStyle"
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/headimg"
+        android:layout_below="@+id/headimg"
+        android:layout_marginTop="5dp"
+        android:text="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" />
+</RelativeLayout>

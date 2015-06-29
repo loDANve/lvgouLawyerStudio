@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+	<TextView
+        android:id="@+id/bank"
+        style="@style/DetailTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:text="中国建设银行(尾号1234)" />
+	
+	<TextView
+        android:id="@+id/money"
+        style="@style/DetailTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/bank"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="200元" />
+	
+	<TextView
+        android:id="@+id/withdarwstate"
+        style="@style/ListWarningTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/money"
+        android:layout_marginTop="50dp"
+        android:text="提现成功" />
+	
+	<TextView
+        android:id="@+id/applytime"
+        style="@style/WithdrawDateTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bank"
+        android:layout_below="@+id/bank"
+        android:layout_marginTop="10dp"
+        android:text="申请时间:2014-05-06 15:15" />
+	
+	<TextView
+        android:id="@+id/accounttime"
+        style="@style/WithdrawDateTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/bank"
+        android:layout_below="@+id/applytime"
+        android:layout_marginTop="8dp"
+        android:paddingBottom="10dp"
+        android:text="预计到账:2014-05-06 15:15" />
+	
+	<TextView
+        android:id="@+id/line"
+        android:layout_width="1dp"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/applytime"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="105dp"
+        android:background="@color/line_color" />
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/filename"
+        style="@style/DetailTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="附件附件附件123.doc" />
+
+    <ImageButton
+        android:id="@+id/download_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/filename"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/attitem_play_btn" />
+
+    <RelativeLayout
+        android:id="@+id/download_progress_rl"
+        android:layout_width="316dp"
+        android:layout_height="11dp"
+        android:layout_alignLeft="@+id/filename"
+        android:layout_below="@+id/filename"
+        android:layout_marginTop="10dp" >
+
+        <ProgressBar
+            android:id="@+id/download_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="316dp"
+            android:layout_height="11dp"
+            android:background="@drawable/attproess_def"
+            android:max="100"
+            android:maxHeight="11dp"
+            android:minHeight="11dp"
+            android:progressDrawable="@drawable/orderdetail_attlist_progressdrawable"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignTop="@+id/download_progress"
+            android:gravity="center_vertical"
+            android:padding="0dp"
+            android:layout_marginTop="-3dp"
+            android:text="50%"
+            android:textColor="#333333"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/download_progress_rl" />
+
+</RelativeLayout>

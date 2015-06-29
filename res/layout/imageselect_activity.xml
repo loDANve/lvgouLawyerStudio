@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <include
+        android:id="@+id/title"
+        layout="@layout/titlebar_main" />
+
+    <ImageView
+        android:id="@+id/imageselet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selectimage" />
+
+    <RelativeLayout
+        android:id="@+id/menu_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#333333"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="取消"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/photo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/cancel"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="相册"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/photograph"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/photo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="拍照"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>
